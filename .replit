@@ -1,5 +1,3 @@
-# Uruchamia wbudowany w Pythona serwer HTTP.
-# Serwuje on pliki z bieżącego katalogu na porcie 8080.
 run = "python3 -m http.server"
 modules = ["python-3.11"]
 
@@ -9,7 +7,6 @@ expertMode = true
 [nix]
 channel = "stable-25_05"
 
-# Zamiast Node.js i http-server, wystarczy nam sam Python
 [nix.deps]
 pkgs = ["pkgs.python3"]
 
@@ -40,7 +37,3 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[[ports]]
-localPort = 36977
-externalPort = 3000
