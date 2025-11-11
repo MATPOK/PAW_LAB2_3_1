@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyszukiwarka Krajów po Stolicach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Wyszukiwarka Krajów po Stolicach</h1>
+
+        <form id="search-form">
+            <label for="capital-input">Wpisz nazwę stolicy:</label>
+            <input type="text" id="capital-input" placeholder="np. Warsaw">
+            <button type="submit">Wyszukaj</button>
+        </form>
+
+        <p id="error-message" class="error"></p>
+
+        <table id="countries-table">
+            <thead>
+                <tr>
+                    <th>Nazwa (potoczna)</th>
+                    <th>Stolica</th>
+                    <th>Populacja</th>
+                    <th>Region</th>
+                    <th>Subregion</th>
+                </tr>
+            </thead>
+            <tbody id="countries-tbody">
+                </tbody>
+        </table>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

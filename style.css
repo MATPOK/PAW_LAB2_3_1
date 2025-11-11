@@ -1,1 +1,83 @@
-a
+/* Podstawowe ustawienia */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* Formularz */
+#search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#search-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+#search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela */
+#countries-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#countries-table th,
+#countries-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#countries-table thead {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Komunikat o błędzie */
+.error {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+    min-height: 1.5em; /* Rezerwuje miejsce, aby uniknąć skakania layoutu */
+}
